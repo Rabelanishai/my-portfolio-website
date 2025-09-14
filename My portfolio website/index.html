@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabelani Shai - Web Developer Portfolio | HTML, CSS, JavaScript Expert</title>
+    <meta name="description" content="Professional web developer portfolio showcasing 2 years of learning experience in HTML, CSS, and JavaScript. View my projects including student management systems, coffee shop websites, and banking applications.">
+    <meta name="author" content="Rabelani Shai">
+    <meta name="keywords" content="web developer, HTML, CSS, JavaScript, portfolio, student management system, coffee shop website, banking system">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Rabelani Shai - Web Developer Portfolio">
+    <meta property="og:description" content="Professional web developer with 2 years of learning experience specializing in HTML, CSS, and JavaScript development.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <button class="nav-logo" onclick="scrollToSection('home')">
+                Rabelani Shai
+            </button>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-menu" id="nav-menu">
+                <button class="nav-link" onclick="scrollToSection('home')" data-section="home">Home</button>
+                <button class="nav-link" onclick="scrollToSection('about')" data-section="about">About</button>
+                <button class="nav-link" onclick="scrollToSection('skills')" data-section="skills">Skills</button>
+                <button class="nav-link" onclick="scrollToSection('projects')" data-section="projects">Projects</button>
+                <button class="nav-link" onclick="scrollToSection('contact')" data-section="contact">Contact</button>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="nav-social">
+                <a href="https://github.com/rabelanishai" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rabelani-shai-1b1602370/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                    <i data-lucide="linkedin"></i>
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <nav class="mobile-menu">
+            <button class="mobile-nav-link" onclick="scrollToSection('home')">Home</button>
+            <button class="mobile-nav-link" onclick="scrollToSection('about')">About</button>
+            <button class="mobile-nav-link" onclick="scrollToSection('skills')">Skills</button>
+            <button class="mobile-nav-link" onclick="scrollToSection('projects')">Projects</button>
+            <button class="mobile-nav-link" onclick="scrollToSection('contact')">Contact</button>
+            <div class="mobile-social">
+                <a href="https://github.com/rabelanishai" target="_blank" rel="noopener noreferrer">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rabelani-shai-1b1602370/" target="_blank" rel="noopener noreferrer">
+                    <i data-lucide="linkedin"></i>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <p class="hero-greeting">Hello, I'm</p>
+                        <h1 class="hero-name">Rabelani Shai</h1>
+                        <div class="hero-title">
+                            <span id="typing-text" class="typing-text"></span>
+                            <span class="cursor">|</span>
+                        </div>
+                        <p class="hero-description">
+                            Passionate web developer with <strong>2 years of learning experience</strong> creating 
+                            beautiful and functional websites using HTML, CSS, and JavaScript. 
+                            I've successfully completed <strong>3 projects</strong> and continue to grow my skills 
+                            in modern web development.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                                View My Work
+                            </button>
+                            <button class="btn btn-outline" onclick="downloadCV()">
+                                <i data-lucide="download"></i>
+                                Download CV
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="profile-container">
+                            <img src="images/WhatsApp Image 2025-09-01 at 22.29.26_9c85ab5c.jpg" alt="Rabelani Shai - Professional Web Developer" class="profile-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <button onclick="scrollToSection('about')" aria-label="Scroll to about section">
+                        <i data-lucide="arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Passionate about creating digital experiences that make a difference</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Building the Web, One Line of Code at a Time</h3>
+                        <div class="text-content">
+                            <p>
+                                Hello! I'm <span class="highlight">Rabelani Shai</span>, 
+                                a dedicated web developer with <strong>2 years of hands-on learning experience</strong> 
+                                in creating engaging and functional web applications.
+                            </p>
+                            <p>
+                                My journey in web development began with a fascination for how websites work, 
+                                and has evolved into a passion for crafting clean, efficient code. I specialize 
+                                in <strong>HTML5</strong>, <strong>CSS3</strong>, and <strong>JavaScript</strong>, 
+                                with a strong focus on responsive design and user accessibility.
+                            </p>
+                            <p>
+                                Throughout my 2 years of learning coding, I've successfully completed <strong>3 projects</strong>, 
+                                ranging from student management systems to e-commerce platforms. Each project 
+                                has taught me valuable lessons about problem-solving, attention to detail, 
+                                and the importance of user-centered design.
+                            </p>
+                        </div>
+                        
+                        <!-- Stats -->
+                        <div class="stats">
+                            <div class="stat">
+                                <div class="stat-number">2</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">3</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">3</div>
+                                <div class="stat-label">Core Technologies</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Highlights -->
+                    <div class="highlights">
+                        <h3>What I Bring to the Table</h3>
+                        <div class="highlight-cards">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i data-lucide="code"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Clean Code</h4>
+                                    <p>Writing semantic, accessible HTML and maintainable CSS & JavaScript</p>
+                                </div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i data-lucide="palette"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Modern Design</h4>
+                                    <p>Creating visually appealing interfaces with attention to user experience</p>
+                                </div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i data-lucide="smartphone"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Responsive Design</h4>
+                                    <p>Building websites that work perfectly across all devices and screen sizes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Skills</h2>
+                    <p class="section-subtitle">Core technologies I use to build amazing web experiences</p>
+                </div>
+                
+                <div class="skills-content">
+                    <div class="main-skills">
+                        <h3>Core Technologies</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <h4>HTML5</h4>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90" style="background: linear-gradient(to right, #f97316, #ef4444);"></div>
+                                </div>
+                                <div class="skill-details">
+                                    <p>Semantic markup, accessibility, SEO optimization, and modern HTML5 APIs</p>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <h4>CSS3</h4>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85" style="background: linear-gradient(to right, #3b82f6, #06b6d4);"></div>
+                                </div>
+                                <div class="skill-details">
+                                    <p>Advanced styling, Flexbox, Grid, animations, and responsive design</p>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <h4>JavaScript</h4>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80" style="background: linear-gradient(to right, #eab308, #f97316);"></div>
+                                </div>
+                                <div class="skill-details">
+                                    <p>DOM manipulation, ES6+, interactive features, and form validation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="additional-skills">
+                        <h3>Additional Skills & Tools</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Responsive Web Design</span>
+                            <span class="skill-badge">Cross-browser Compatibility</span>
+                            <span class="skill-badge">Web Performance Optimization</span>
+                            <span class="skill-badge">Version Control (Git)</span>
+                            <span class="skill-badge">Code Organization</span>
+                            <span class="skill-badge">Debugging & Testing</span>
+                            <span class="skill-badge">Web Accessibility (a11y)</span>
+                            <span class="skill-badge">SEO Best Practices</span>
+                        </div>
+                        
+                        <div class="learning-cards">
+                            <div class="learning-card">
+                                <h4>🎯 My Learning Philosophy</h4>
+                                <p>I believe in continuous learning and staying updated with the latest web development trends. Each project is an opportunity to refine my skills and learn something new.</p>
+                            </div>
+                            
+                            <div class="learning-card">
+                                <h4>📚 Currently Learning</h4>
+                                <ul>
+                                    <li>Advanced CSS Grid Layouts</li>
+                                    <li>Modern JavaScript ES2024</li>
+                                    <li>Web Performance Optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Projects</h2>
+                    <p class="section-subtitle">Showcasing my best work and the solutions I've built</p>
+                </div>
+                
+                <!-- Filter Buttons -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">
+                        <i data-lucide="filter"></i>
+                        All Projects
+                    </button>
+                    <button class="filter-btn" data-filter="web-app">
+                        <i data-lucide="filter"></i>
+                        Web Applications
+                    </button>
+                    <button class="filter-btn" data-filter="website">
+                        <i data-lucide="filter"></i>
+                        Websites
+                    </button>
+                </div>
+                
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <div class="project-card" data-category="web-app">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="images/student-management.jpg" alt="Student Management System - Project Screenshot">
+                                <div class="project-overlay"></div>
+                            </div>
+                            <div class="project-details">
+                                <div class="project-header">
+                                    <h3>Student Management System</h3>
+                                    <span class="project-year">2025</span>
+                                </div>
+                                <p class="project-description">
+                                    A comprehensive web application for managing student records, grades, and academic information. 
+                                    Features include student registration, grade tracking, and report generation.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-badge">HTML5</span>
+                                    <span class="tech-badge">CSS3</span>
+                                    <span class="tech-badge">JavaScript</span>
+                                </div>
+                                <div class="project-features">
+                                    <h4>Key Features:</h4>
+                                    <ul>
+                                        <li>Student registration and profile management</li>
+                                        <li>Grade calculation and tracking system</li>
+                                        <li>Interactive dashboard with charts</li>
+                                    </ul>
+                                </div>
+                                <div class="project-challenge">
+                                    <h4>Challenge:</h4>
+                                    <p>Implementing complex data relationships and creating an intuitive user interface for educational staff.</p>
+                                </div>
+                                <div class="project-buttons">
+                                    <button class="btn btn-primary">
+                                        <i data-lucide="external-link"></i>
+                                        Live Demo
+                                    </button>
+                                    <button class="btn btn-outline">
+                                        <i data-lucide="github"></i>
+                                        Source Code
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="website">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="images/coffee-shop.jpg" alt="Coffee Shop Website - Project Screenshot">
+                                <div class="project-overlay"></div>
+                            </div>
+                            <div class="project-details">
+                                <div class="project-header">
+                                    <h3>Coffee Shop Website</h3>
+                                    <span class="project-year">2024</span>
+                                </div>
+                                <p class="project-description">
+                                    An elegant and responsive website for a local coffee shop featuring online menu, 
+                                    location details, and contact information with a warm, inviting design.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-badge">HTML5</span>
+                                    <span class="tech-badge">CSS3</span>
+                                    <span class="tech-badge">JavaScript</span>
+                                </div>
+                                <div class="project-features">
+                                    <h4>Key Features:</h4>
+                                    <ul>
+                                        <li>Interactive menu with filtering options</li>
+                                        <li>Image gallery with lightbox effect</li>
+                                        <li>Contact form with validation</li>
+                                    </ul>
+                                </div>
+                                <div class="project-challenge">
+                                    <h4>Challenge:</h4>
+                                    <p>Creating an appealing visual design that captures the coffee shop atmosphere while maintaining fast loading times.</p>
+                                </div>
+                                <div class="project-buttons">
+                                    <button class="btn btn-primary">
+                                        <i data-lucide="external-link"></i>
+                                        Live Demo
+                                    </button>
+                                    <button class="btn btn-outline">
+                                        <i data-lucide="github"></i>
+                                        Source Code
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web-app">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="images/banking-system.jpg" alt="Banking System Application - Project Screenshot">
+                                <div class="project-overlay"></div>
+                            </div>
+                            <div class="project-details">
+                                <div class="project-header">
+                                    <h3>Banking System Application</h3>
+                                    <span class="project-year">2024</span>
+                                </div>
+                                <p class="project-description">
+                                    A secure banking interface simulation with account management, transaction history, 
+                                    and fund transfer capabilities. Focuses on security and user experience.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-badge">HTML5</span>
+                                    <span class="tech-badge">CSS3</span>
+                                    <span class="tech-badge">JavaScript</span>
+                                </div>
+                                <div class="project-features">
+                                    <h4>Key Features:</h4>
+                                    <ul>
+                                        <li>Secure login system simulation</li>
+                                        <li>Account balance and transaction display</li>
+                                        <li>Fund transfer interface</li>
+                                    </ul>
+                                </div>
+                                <div class="project-challenge">
+                                    <h4>Challenge:</h4>
+                                    <p>Designing a secure-looking interface while implementing complex form validations and ensuring data integrity.</p>
+                                </div>
+                                <div class="project-buttons">
+                                    <button class="btn btn-primary">
+                                        <i data-lucide="external-link"></i>
+                                        Live Demo
+                                    </button>
+                                    <button class="btn btn-outline">
+                                        <i data-lucide="github"></i>
+                                        Source Code
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="project-cta">
+                    <div class="cta-card">
+                        <h3>Interested in Working Together?</h3>
+                        <p>I'm always excited to take on new challenges and create amazing web experiences. Let's discuss your next project!</p>
+                        <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                            Get in Touch
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Ready to start your next project? Let's work together to create something amazing!</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p class="contact-description">
+                            I'm always interested in new opportunities and exciting projects. 
+                            Whether you're looking to build a new website, need help with an existing project, 
+                            or just want to chat about web development, I'd love to hear from you!
+                        </p>
+                        
+                        <div class="contact-details">
+                            <a href="mailto:rabelanishai2@gmail.com" class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <div class="contact-label">Email</div>
+                                    <div class="contact-value">rabelanishai2@gmail.com</div>
+                                </div>
+                            </a>
+                            
+                            <a href="tel:+27818203223" class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <div class="contact-label">Phone</div>
+                                    <div class="contact-value">0818203223</div>
+                                </div>
+                            </a>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <div class="contact-label">Location</div>
+                                    <div class="contact-value">South Africa</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="availability-card">
+                            <h4>🚀 Available for New Projects</h4>
+                            <p>I'm currently available for freelance projects and full-time opportunities. I typically respond to messages within 24 hours.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <h3>Send Me a Message</h3>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name *</label>
+                                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                                    <span class="error-message" id="name-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                                    <span class="error-message" id="email-error"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                                <span class="error-message" id="subject-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" required placeholder="Tell me about your project or inquiry..." rows="5"></textarea>
+                                <span class="error-message" id="message-error"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                                <i data-lucide="send"></i>
+                                <span class="btn-text">Send Message</span>
+                                <div class="loading-spinner" style="display: none;"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Rabelani Shai</h3>
+                    <p>Web Developer passionate about creating beautiful, functional, and user-friendly websites using HTML, CSS, and JavaScript.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/Rabelanishai" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rabelani-shai-1b1602370/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="mailto:rabelanishai2@gmail.com" aria-label="Send Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <div class="footer-nav">
+                        <button onclick="scrollToSection('home')">Home</button>
+                        <button onclick="scrollToSection('about')">About</button>
+                        <button onclick="scrollToSection('skills')">Skills</button>
+                        <button onclick="scrollToSection('projects')">Projects</button>
+                        <button onclick="scrollToSection('contact')">Contact</button>
+                    </div>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Get In Touch</h4>
+                    <div class="footer-contact-info">
+                        <div class="contact-info-item">
+                            <span class="label">Email:</span>
+                            <a href="mailto:rabelanishai2@gmail.com">rabelanishai2@gmail.com</a>
+                        </div>
+                        <div class="contact-info-item">
+                            <span class="label">Phone:</span>
+                            <a href="tel:+27818203223">0818203223</a>
+                        </div>
+                        <div class="contact-info-item">
+                            <span class="label">Location:</span>
+                            <span>South Africa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <span>© 2024 Rabelani Shai. All rights reserved.</span>
+                </div>
+                <div class="footer-built">
+                    <span>Built with ❤️ using HTML, CSS & JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
