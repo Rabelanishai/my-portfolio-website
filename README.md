@@ -2,8 +2,6 @@
 
 A modern, responsive portfolio website showcasing my skills, projects, and professional experience as a web developer. Built with HTML5, CSS3, and vanilla JavaScript.
 
-![Portfolio Preview](images/portfolio-preview.png)
-
 ## 📋 Table of Contents
 
 - [About](#about)
