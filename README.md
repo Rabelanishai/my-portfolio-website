@@ -57,7 +57,7 @@ This portfolio website serves as my digital resume and demonstrates my proficien
 - **Font Awesome** - Icon library for enhanced visual design
 - **Google Fonts** - Custom typography (Inter font family)
 
-## 📁 Project Structure
+##  Project Structure
 
 portfolio-website/
 ├── index.html              # Main HTML file
@@ -146,10 +146,6 @@ While this is a personal portfolio, feedback and suggestions are welcome! Feel f
 1. Open an issue for bugs or suggestions
 2. Fork the repository for your own portfolio inspiration
 3. Star the repository if you found it helpful
-
-##  License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ##  Contact
 
